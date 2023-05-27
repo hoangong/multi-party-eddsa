@@ -98,7 +98,7 @@ pub fn generate_partial_nonces(
     generate_partial_nonces_internal(keys, message, &mut rng)
 }
 
-fn generate_partial_nonces_internal(
+pub fn generate_partial_nonces_internal(
     keys: &ExpandedKeyPair,
     message: Option<&[u8]>,
     rng: &mut impl Rng,
